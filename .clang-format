@@ -10,41 +10,38 @@ ConstructorInitializerIndentWidth: 4
 SortIncludes: false
 
 AlignAfterOpenBracket: true
-AlignEscapedNewlinesLeft: true
+AlignEscapedNewlines: Left
 AlignOperands: false
 AlignTrailingComments: true
 
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortBlocksOnASingleLine: false
 AllowShortCaseLabelsOnASingleLine: false
-AllowShortFunctionsOnASingleLine: true
-AllowShortIfStatementsOnASingleLine: false
-AllowShortFunctionsOnASingleLine: All
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: true
 
-AlwaysBreakAfterDefinitionReturnType: false
-AlwaysBreakTemplateDeclarations: false
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakTemplateDeclarations: No
 AlwaysBreakBeforeMultilineStrings: false
 
 BreakBeforeBinaryOperators: None
-BreakBeforeTernaryOperators: false
-BreakConstructorInitializersBeforeComma: false
+BreakBeforeTernaryOperators: true
 
 BinPackArguments: true
 BinPackParameters: true
 ColumnLimit: 0
-ConstructorInitializerAllOnOneLineOrOnePerLine: true
 DerivePointerAlignment: false
 ExperimentalAutoDetectBinPacking: false
 IndentCaseLabels: true
 IndentWrappedFunctionNames: false
-IndentFunctionDeclarationAfterType: false
 MaxEmptyLinesToKeep: 1
 KeepEmptyLinesAtTheStartOfBlocks: false
 NamespaceIndentation: Inner
 ObjCBlockIndentWidth: 4
 ObjCSpaceAfterProperty: true
 ObjCSpaceBeforeProtocolList: true
+ObjCBinPackProtocolList: Auto
 PenaltyBreakBeforeFirstCallParameter: 10000
 PenaltyBreakComment: 300
 PenaltyBreakString: 1000
@@ -64,7 +61,7 @@ BraceWrapping:
     AfterClass: true
     AfterControlStatement: false
     AfterEnum: false
-    AfterFunction: true
+    AfterFunction: false
     AfterNamespace: true
     AfterObjCDeclaration: true
     AfterStruct: false
