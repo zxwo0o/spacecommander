@@ -1,10 +1,10 @@
 ---
 # Custom options in the special build of clang-format (these are not standard options)
-IndentNestedBlocks: false
-AllowNewlineBeforeBlockParameter: false
+#IndentNestedBlocks: false
+#AllowNewlineBeforeBlockParameter: false
 
-Language:        Cpp
-# BasedOnStyle:  Google
+Language:        ObjC
+BasedOnStyle:  LLVM
 AccessModifierOffset: -1
 ConstructorInitializerIndentWidth: 4
 SortIncludes: false
@@ -18,7 +18,7 @@ AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortBlocksOnASingleLine: false
 AllowShortCaseLabelsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: true
-AllowShortIfStatementsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: All
 AllowShortLoopsOnASingleLine: true
 
@@ -58,7 +58,7 @@ Standard:        Auto
 IndentWidth:     4
 TabWidth:        8
 UseTab:          Never
-BreakBeforeBraces: Custom
+BreakBeforeBraces: Attach
 BraceWrapping: 
     AfterClass: true
     AfterControlStatement: false
@@ -77,7 +77,7 @@ SpacesInSquareBrackets: false
 SpacesInAngles:  false
 SpaceInEmptyParentheses: false
 SpacesInCStyleCastParentheses: false
-SpaceAfterCStyleCast: false
+SpaceAfterCStyleCast: true
 SpacesInContainerLiterals: true
 SpaceBeforeAssignmentOperators: true
 
